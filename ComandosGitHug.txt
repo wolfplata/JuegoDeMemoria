@@ -1,0 +1,50 @@
+Comand pwd: Permite saber en donde estás ubicado en ese momento dentro de la terminal
+
+Comand ls: permite ver los archivos contenidas en la carpeta
+
+Comand mkdir: Crea una carpetas
+
+Comand cd: Te mete dentro de la carpeta que se seleccione
+
+Comand git init: inicializa el git dentro de una carpeta
+
+Comand cd .. : sale de una carpeta dando un salto hacia atras
+
+Comand git clone xxxxxx (enlace delrepositorio a conectar): Clona un repositorio indicado
+
+Comand git add . : Guarda todos los cambios realizados en la carpeta
+
+Comand git commit -m '' : Agrega un mensaje (el que está entre comillas a la hora de subir los cambios al remoto)
+
+Comand git remote -v: Te dice a que repositorio remoto está conectado
+
+Comand git push origin main (o la rama en la que esté trabajando): permite subir los camvios de los archivos a la 
+rama señalada
+
+Comand git checkout xxxx(nombre de la rama): viaja a la rama que le indiques
+
+Comand git checkout -b xxxx (nombre de la rama a crear): crea una nueva rama
+
+Comand touch xxxx (nombre del archivo con su extensión): crea un nuevo archivo
+
+Comand git add XXXX(archivo a subir): sube un archivo seleccionado
+
+Concepto merge: une una rama creada con el main
+
+Concepto Merge pull request: es la acción de realizar el merge
+
+Concepto Create a Merge commit: crea un commit nuevo sobre el ya existente
+
+Concepto Squash and Merge: Si tienes 3 commit, los convierte en 1 y los agrega al main
+
+Concepto Rebase and Merge: Mantiene los commits y los agrega al Merge
+
+Comand git pull origin main: Actualiza los cambios en nuestra rama local
+
+Comand git log: es un historial de los commit que hemos creado
+
+Comand git tag xxxx(nombre de la versión): Se utiliza normalmente en el main o master para crear versiones
+del proyecto
+
+
+

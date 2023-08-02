@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no">
+    <link href="cartas.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
+    <title>Memoria</title>
+</head>
+<body>
+    <header class="cabecera">
+        <div class="contadores">
+            <div class="contador_item">
+                <h4 class="cabecera_titulo">Movimientos</h4>
+                <div class="cabecera_num">
+                    <span id="mov">00</span>/<span id="mov_total">20</span>
+                </div>
+            </div>
+            <div class="contador_item2">
+                <h4 class="cabecera_titulo2">Tiempo</h4>
+                <div class="cabecera_num2">
+                    <span id="minutos">00</span>:<span id="segundos">00</span>
+                </div>
+            </div>
+            <div class="niveles">
+                <h4 class="cabecera_titulo3">Niveles</h4>
+                <div class="cabecera_numeros3">
+                    <span id="nivel">01</span>/<span id="nivel_total">05</span>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <main> 
+        <div id="mesa" class="mesa"> </div> 
+        <div id="subenivel" class="sube-nivel">
+            <div calss="modal">
+                <h2>¡Muy Bien!</h2>
+                <button id="subir">Siguiente nivel</button>
+                <button class="reiniciar">Reiniciar</button>
+            </div>
+        </div>
+
+        <div id="gameover" class="game-over">
+            <div calss="modal">
+                <h2>¡Oh no!</h2>
+                <p>Te haz quedado sin movimientos</p>
+                <button class="reiniciar">Reiniciar</button>
+            </div>
+        </div>
+
+        <div id="endgame" class="end-game">
+            <div calss="modal">
+                <h2>¡Felicidades!</h2>
+                <p>Haz superado todos los niveles</p>
+                <button class="reiniciar">Reiniciar</button>
+            </div>
+        </div>
+
+    </main>
+
+    <audio src="sonidos/mario-bros-woo-hoo.mp3" 
+    class="sonido" 
+    id="sonido-acierto"
+    preload="auto"
+    controls>
+    </audio>
+
+    <audio src="sonidos/mario-bros-mamma-mia.mp3" 
+    class="sonido" 
+    id="sonido-error"
+    preload="auto"
+    controls>
+    </audio>
+
+    <audio src="sonidos/pacman-eating-cherry.mp3" 
+    class="sonido" 
+    id="sonido-carta"
+    preload="auto"
+    controls>
+    </audio>
+
+    <audio src="sonidos/kirby-victory.mp3" 
+    class="sonido" 
+    id="sonido-subenivel"
+    preload="auto"
+    controls>
+    </audio>
+
+    <audio src="sonidos/mario-bros game over.mp3" 
+    class="sonido" 
+    id="sonido-gameover"
+    preload="auto"
+    controls>
+    </audio>
+
+    
+    <audio src="sonidos/gta-san-andreas-f.mp3" 
+    class="sonido" 
+    id="sonido-endgame"
+    preload="auto"
+    controls>
+    </audio>
+
+    <audio src="sonidos/mortal-kombat-round-one.mp3" 
+    class="sonido" 
+    id="sonido-mk1"
+    preload="auto"
+    controls>
+    </audio>
+
+    <audio src="sonidos/mortal-kombat-round-two.mp3" 
+    class="sonido" 
+    id="sonido-mk2"
+    preload="auto"
+    controls>
+    </audio>
+
+    <audio src="sonidos/mortal-kombat-round-three.mp3" 
+    class="sonido" 
+    id="sonido-mk3"
+    preload="auto"
+    controls>
+    </audio>
+
+    <audio src="sonidos/mortal-kombat-four.mp3" 
+    class="sonido" 
+    id="sonido-mk4"
+    preload="auto"
+    controls>
+    </audio>
+
+    <audio src="sonidos/mortal-kombat-round-five.mp3" 
+    class="sonido" 
+    id="sonido-mk5"
+    preload="auto"
+    controls>
+    </audio>
+
+
+
+    <!--
+        <script src="cartas.js"></script>
+    -->
+   
+    <script src="variables-globales.js"></script>
+    <script src="finalizar.js"></script>
+    <script src="baraja-reparte.js"></script>
+    <script src="contador.js"></script>
+    <script src="descubrir-comparar.js"></script>
+    <script src="acierto-error.js"></script>
+    <script src="cronometro.js"></script>
+    <script src="cambiaNivel.js"></script>
+    <script src="game-over.js"></script>
+    <script src="iniciar.js"></script>
+   
+</body>
+</html>
